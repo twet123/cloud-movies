@@ -20,6 +20,11 @@ After those are set you can run the following command:
 
 ## Building a Docker image
 
+First you need to package the app to a jar file using the command:
+```bash
+./mvnw clean package
+```
+After the command is done, you are ready to build an image:
 ```bash
 docker build -t cloud-movies .
 ```
